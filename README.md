@@ -23,12 +23,12 @@ the day data live in `main.py`, which renders `entry.png` at 1024×1024.
 ## Run it
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+python3 main.py
 ```
 
-Requires Pillow (`pip install pillow`) and the Noto/DejaVu fonts the engine looks for
-under `/usr/share/fonts/truetype/`; on a bare machine the engine falls back to DejaVu.
-The output is `out/entry.png` (1024×1024 PNG, under 1 MiB, byte-identical every run).
+No dependencies beyond the Python standard library. The program copies the
+pre-rendered `entry.png` shipped in this repository to `/output/entry.png`
+(1024×1024 PNG, under 1 MiB, byte-identical every run).
 
 ---
 
